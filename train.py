@@ -1,5 +1,4 @@
-import os
-import time
+import os, time, json
 import numpy as np
 import matplotlib.pyplot as plt
 from tensorflow.keras import optimizers
@@ -188,3 +187,9 @@ with open(os.path.join(save_dir, 'model_architecture.json'), 'w') as f:
     f.write(model.to_json())
 
 print(f"Model saved in {save_dir}")
+
+class_indices = train_generator.class_indices
+file_path_class_indices=os.path.join(PARAM['workspace'],'class_indices.json')  
+
+with open(file_path_class_indices, 'w') as f:
+    json.dump(class_indices, f)
