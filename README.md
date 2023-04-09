@@ -20,12 +20,12 @@ Now you are ready to run the scripts in this project.
 
 # Usage
 To train a model, run the following command:  
-`python train.py`
+`python train_classifier.py`
 
 This script will train the model based on the configurations specified in the PARAM dictionary and save the trained model to the specified workspace directory.  
 
 To perform inference on a new dataset using the trained model, run the following command:  
-`python inference.py`
+`python inference_class.py`
 
 This script will load the trained model from the workspace directory and predict the class of each image in the test dataset. The predictions, along with the top probabilities and class indices, will be saved to a JSON file in the workspace directory.  
 
