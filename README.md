@@ -11,8 +11,8 @@ To set up the environment locally to run the scripts, we recommend using conda f
 `conda activate boxedml`   
 
 3.  Install the required packages:  
-`conda install tensorflow keras numpy pandas matplotlib scikit-learn scikit-image
-conda install -c conda-forge lime`
+`conda install tensorflow keras numpy pandas matplotlib scikit-learn scikit-image`  
+`conda install -c conda-forge lime`
 
 Note: You may need to install additional packages depending on the specific explainable AI techniques used in the project.  
 
